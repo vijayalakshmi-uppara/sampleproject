@@ -1,0 +1,40 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sheriyans coding school</title>
+    <link rel="stylesheet" href="{% static 'bootcamp.css' %}">
+    <link rel="icon" href="../static/Sheryians_logo.webp">
+</head>
+<body>
+    <nav>
+        <ul class="navbar">
+            <img class="img" src="../static/Sheryians_logo.webp" alt="">
+            <span id="span">Sheryians coding school</span>
+            <a class="element" id="home" href="{% url 'myapp:home' %}">Home</a>
+            <a class="element" id="courses" href="{% url 'myapp:courses' %}">Courses</a>
+            <a class="element" id="bootcamp" href="{% url 'myapp:bootcamp' %}">Bootcamp (kodr)</a>
+            <a class="element" id="callback" href="{% url 'myapp:callback' %}">Request Callback</a>
+            <button id="sign-in" class="element">Sign In</button>
+        </ul>
+    </nav>
+    <section class="bootcamp-container">
+        <div class="text-content">
+            <h2>6 months In-House Bootcamp programme - kodr.</h2>
+            <p>Starts on: <strong>11 nov 2024</strong></p>
+            <p>Placement Assistance <span>✔</span></p>
+            <p class="price">Price ₹ 59000<small>[50,000 + 18% GST]</small></p>
+            <div class="seats-full">Seats Are Full</div>
+        </div>
+
+        <div class="video-container">
+            <iframe width="500" height="300" src="" title="This Bootcamp will change your life: kodr x Sheriyans !" frameborder="0" allow="accelerometer; autoplay;
+            clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+    </section>
+    
+</body>
+</html>

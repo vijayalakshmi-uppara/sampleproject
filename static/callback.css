@@ -1,0 +1,137 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-image: linear-gradient(90deg, #0c0c0c, #002f2f);
+    color: white;
+}
+
+.navbar{
+    display: flex;
+    text-align: right;
+    padding: 0.5vw;
+    background-image: linear-gradient(90deg, #0c0c0c, #002f2f);
+    position: relative;
+    top: 0.2vw;
+    gap: 3vw;
+    display: flex;
+    color: whitesmoke;
+}
+
+.img{
+    width: 1.5vw;
+    height: 2vw;
+    position: relative;
+    left: 3.5vw;
+}
+
+#sign-in{
+    background-color: #14d39e;
+    border: none;
+    color: black;
+    padding: 0.3vw;
+    font-size: 1vw;
+    border-radius: 0.4vw;
+}
+
+.element{
+    color: white;
+    position: relative;
+    top: 0.5vw;
+    left: 40vw;
+    text-decoration: none;
+}
+
+#span{
+    font-size: 1.3vw;
+    position: relative;
+    left: 1vw;
+    top: 0.5vw;
+}
+
+.model-content{
+    background-color: #222;
+    padding: 3vw;
+    border-radius: 1vw;
+    max-width: fit-content;
+    text-align: center;
+    position: relative;
+    margin-top: 5vw;
+}
+
+.model-content h2{
+    font-size: 3vw;
+    margin-bottom: 1vw;
+    color: #fff;
+}
+
+.model-content p{
+    font-size: 1vw;
+    margin-bottom: 1vw;
+    color: #ccc;
+}
+
+label{
+    display: block;
+    margin: 1vw;
+    text-align: left;
+    color: #fff;
+}
+
+input{
+    width: 100%;
+    padding: 0.7vw;
+    margin-bottom: 1vw;
+    border: 0.05vw solid #555;
+    border-radius: 0.5vw;
+    background-color: #333;
+    color: #fff;
+}
+
+input::placeholder{
+    color: #aaa;
+}
+
+.phone-input{
+    display: flex;
+    align-items: center;
+}
+
+.phone-input .flag{
+    background-color: #444;
+    padding: 0.7vw;
+    margin-right: 0.5vw;
+    border-radius: 0.5vw;
+    margin-bottom: 1vw;
+}
+
+#submitbtn{
+    background-color: #1dd2af;
+    color: #000;
+    font-weight: bold;
+    border: none;
+    padding: 0.8rem;
+    width: 100%;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1vw;
+}
+
+button:hover{
+    background-color: #14a98b;
+}
+
+.close-btn{
+    position: absolute;
+    top: 1vw;
+    right: 1vw;
+    font-size: 1vw;
+    color: #fff;
+    cursor: pointer;
+}
+
+.close-btn:hover{
+    color: #1dd2af;
+}

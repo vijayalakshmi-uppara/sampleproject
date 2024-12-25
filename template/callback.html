@@ -1,0 +1,51 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Request a Callback</title>
+    <link rel="stylesheet" href="{% static 'callback.css' %}">
+    <link rel="icon" href="../static/Sheryians_logo.webp">
+</head>
+<body>
+    <nav>
+        <ul class="navbar">
+            <img class="img" src="../static/Sheryians_logo.webp" alt="">
+            <span id="span">Sheryians coding school</span>
+            <a class="element" id="home" href="{% url 'myapp:home' %}">Home</a>
+            <a class="element" id="courses" href="{% url 'myapp:courses' %}">Courses</a>
+            <a class="element" id="bootcamp" href="{% url 'myapp:bootcamp' %}">Bootcamp (kodr)</a>
+            <a class="element" id="callback" href="{% url 'myapp:callback' %}">Request Callback</a>
+            <button id="sign-in" class="element">Sign In</button>
+        </ul>
+    </nav>
+    <!-- Request Callback Model -->
+     <center>
+        <div class="Model" id="callbackModel">
+            <div class="model-content">
+                <span class="close-btn" id="closeModel">&times;</span>
+                <h2>Request a callback</h2>
+                <p>Fill the form below to Request a callback from our team.</p>
+                <!-- Form -->
+                <form id="callbackForm">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" placeholder="Name" required>
+
+                    <label for="Phone">Phone</label>
+                    <div class="phone-input">
+                        <span class="flag">IN</span>
+                        <input type="tel" id="phone" name="phone" placeholder="Phone" required>
+                    </div>
+                    <label for="datetime">Select Date and Time</label>
+                    <input type="datetime-local" id="datetime" name="datetime" required>
+
+                    <button type="submit" id="submitbtn">Submit</button>
+                </form>
+            </div>
+        </div>
+     </center>
+     <!-- JavaScript -->
+      <script src="{% static 'callback.js' %}"></script>
+</body>
+</html>

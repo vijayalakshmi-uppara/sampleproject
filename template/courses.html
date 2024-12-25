@@ -1,0 +1,33 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sheryians Coding School</title>
+    <link rel="stylesheet" href="{% static 'courses.css' %}">
+    <link rel="icon" href="../static/Sheryians_logo.webp">
+</head>
+<body>
+    <nav>
+        <ul class="navbar">
+            <img class="img" src="../static/Sheryians_logo.webp" alt="">
+            <span id="span">Sheryians coding school</span>
+            <a class="element" id="home" href="{% url 'myapp:home' %}">Home</a>
+            <a class="element" id="courses" href="{% url 'myapp:courses' %}">Courses</a>
+            <a class="element" id="bootcamp" href="{% url 'myapp:bootcamp' %}">Bootcamp (kodr)</a>
+            <a class="element" id="callback" href="{% url 'myapp:callback' %}">Request Callback</a>
+            <button id="sign-in" class="element">Sign In</button>
+        </ul>
+    </nav>
+    <section class="courses">
+        <h1>We're not a <span class="highlight">course</span><br>
+        <span class="factory">factory.</span></h1>
+        <h2 id="headind">We focus on courses that really help.</h2>
+    </section>
+    <footer class="footer">
+        <p>Courses which do work &#8595;</p>
+    </footer>
+</body>
+</html>

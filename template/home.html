@@ -1,0 +1,49 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar with Image</title>
+    <link rel="stylesheet" href="{% static 'home.css' %}">
+    <link rel="icon" href="../static/Sheryians_logo.webp">
+</head>
+<body>
+    <nav>
+        <ul class="navbar">
+            <img class="img" src="../static/Sheryians_logo.webp" alt="">
+            <span id="span">Sheryians coding school</span>
+            <a class="element" id="home" href="{% url 'myapp:home' %}">Home</a>
+            <a class="element" id="courses" href="{% url 'myapp:courses' %}">Courses</a>
+            <a class="element" id="bootcamp" href="{% url 'myapp:bootcamp' %}">Bootcamp (kodr)</a>
+            <a class="element" id="callback" href="{% url 'myapp:callback' %}">Request Callback</a>
+            <button id="sign-in" class="element">Sign In</button>
+        </ul>
+    </nav>
+    <div id="header_container">
+        <h1>We only <span id="hight_light">teach</span><br> what we are really <br>really <em>good</em> at.</h1>
+    </div>
+    <div>
+        <p class="para">Get ready to <span id="span_color">accelerate your <br> carrer</span> with customized courses <br> and leave your mark in the tech <br> industry</p>
+    </div>
+    <br><br>
+    <a href="{% url 'myapp:courses' %}"><button class="button">Check Courses - Make an Impact</button></a>    
+    <br><br>
+    <div id="div">
+        <div class="element_item1">
+            <h2>25K+</h2>
+            <p>Stdents taught</p>
+        </div>
+        <div class="element_item2">
+            <h2>20+</h2>
+            <p>Instructors</p>
+        </div>
+        <div class="element_item3">
+            <h3>433K+</h3>
+            <p>Youtube Subs.</p>
+        </div>
+    </div>
+    <div id="second_container">we do whatever it takes to help you <br><span id="span_color">understand the concepts.</span></div>
+</body>
+</html>
